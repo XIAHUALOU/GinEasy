@@ -57,7 +57,5 @@ func NewTaskExecutor(f Task, back callback, p []interface{}) *TaskExecutor {
 	return &TaskExecutor{f: f, p: p, back: back}
 }
 func AddTask(f Task, back callback, params ...interface{}) {
-	go func() {
-		GetTaskChan() <- NewTaskExecutor(f, back, params)
-	}()
+	GetTaskChan() <- NewTaskExecutor(f, back, params)
 }
