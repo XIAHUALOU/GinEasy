@@ -34,10 +34,10 @@ func (self *GE) Handle(httpMethod, relativePath string, handler interface{}) *GE
 }
 
 //GE's middleware
-func (this *GE) AddMid(middleWares ...middleWares.Mid) *GE {
+func (self *GE) AddMid(middleWares ...middleWares.Mid) *GE {
 	for _, mid := range middleWares {
 		mid := mid
-		this.Use(func(context *gin.Context) {
+		self.Use(func(context *gin.Context) {
 			err := mid.BeforeRequest(context)
 			if err != nil {
 				context.AbortWithStatusJSON(400, gin.H{"error": err.Error()})
@@ -46,7 +46,7 @@ func (this *GE) AddMid(middleWares ...middleWares.Mid) *GE {
 			}
 		})
 	}
-	return this
+	return self
 }
 
 //This method is mainly used to add routes and inject dependencies into controllers
