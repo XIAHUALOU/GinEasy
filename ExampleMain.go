@@ -1,10 +1,10 @@
 package main
 
 import (
-	"GinEasy/controllers"
-	"GinEasy/dependencies"
-	"GinEasy/middleWares"
-	. "GinEasy/src"
+	"github.com/XIAHUALOU/GinEasy/controllers"
+	"github.com/XIAHUALOU/GinEasy/dependencies"
+	"github.com/XIAHUALOU/GinEasy/middleWares"
+	. "github.com/XIAHUALOU/GinEasy/src"
 )
 
 func main() {

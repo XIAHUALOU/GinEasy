@@ -1,10 +1,10 @@
 package controllers
 
 import (
-	"GinEasy/dependencies"
-	"GinEasy/src"
-	"GinEasy/tasks"
 	"fmt"
+	"github.com/XIAHUALOU/GinEasy/dependencies"
+	"github.com/XIAHUALOU/GinEasy/src"
+	"github.com/XIAHUALOU/GinEasy/tasks"
 	"github.com/gin-gonic/gin"
 )
 

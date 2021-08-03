@@ -1,7 +1,7 @@
 package src
 
 import (
-	"GinEasy/middleWares"
+	"github.com/XIAHUALOU/GinEasy/middleWares"
 	"github.com/gin-gonic/gin"
 )
 
