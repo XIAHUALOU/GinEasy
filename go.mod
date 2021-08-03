@@ -1,4 +1,4 @@
-module github.com/XIAHUALOU/GinEasy
+module github.com/XIAHUALOU/variou-gin
 
 go 1.14
 

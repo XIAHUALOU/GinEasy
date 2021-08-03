@@ -2,9 +2,9 @@ package controllers
 
 import (
 	"fmt"
-	"github.com/XIAHUALOU/GinEasy/dependencies"
-	"github.com/XIAHUALOU/GinEasy/src"
-	"github.com/XIAHUALOU/GinEasy/tasks"
+	"github.com/XIAHUALOU/variou-gin/dependencies"
+	"github.com/XIAHUALOU/variou-gin/src"
+	"github.com/XIAHUALOU/variou-gin/tasks"
 	"github.com/gin-gonic/gin"
 )
 
